@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lucas Paternoster</title>
+</head>
+<body>
+    
+    <form action="./form-result.php" method="POST" target="_blank">
+    
+     <!-- Nombre y Apellidos -->
+     <label for="Nombre y Apellidos">Nombre y Apellidos</label> <input type="text" name="Nombre y Apellidos"><br><br>
+    
+     <!-- Edad (input numerico)-->
+     <label for="Edad">Edad</label> <input type="number" name="Edad"><br><br>
+
+     <!-- Email -->
+     <label for="Email">Email</label> <input type="text" name="Email"><br><br>
+
+     <!-- Password -->
+     <label for="Pasword">Password</label> <input type="text" name="Password"><br><br>
+
+     <!-- Sexo select -->
+     <label for="Sexo">Sexo</label>
+     <select name="Sexo">
+        <option value="Hombre">Hombre</option>
+        <option value="Mujer">Mujer</option>
+        <option value="Otro">Otro</option>
+     </select><br><br>
+
+     <!-- Ocupacion Checkbox/listar -->
+     <label for="checkbox">Ocupacion</label><br>
+     <ul>
+         <li>
+          <input type="checkbox" id="Estudiante" name="Estudiante" value="Estudiante">
+          <label for="Estudiante">Estudiante</label>
+         </li>
+         <li>
+           <input type="Checkbox" id="Profesional" name="Profecional" value="Profesional">
+           <label for="Profesional">Profesional</label>
+         </li>
+         <li>
+            <input type="Checkbox" id="Otro" name="Otro" value="Otro">
+            <label for="Otro">Otro</label>
+         </li>
+      </ul>
+  
+     <!-- Hora de contacto checkbox/listar -->
+     <label for="checkbox">Hora de contacto</label><br>
+     <ul>
+        <li>
+            <input type="checkbox" id="A la mañana" name="A la mañana" value="A la mañana">
+            <label for="A la mañana">A la mañana</label>
+        </li>
+        <li>
+            <input type="checkbox" id="A la tarde" name="A la tarde" value="A la tarde">
+            <label for="A la tarde">A la tarde</label>
+        </li>
+        <li>
+            <input type="checkbox" id="A la noche" name="A la noche" value="A la noche">  
+            <label for="A la noche">A la noche</label>
+        </li>
+     </ul>
+
+     <!-- Agregue un comentario textarea -->
+     <textarea name="Agregue un comentario" id="Agregue un comentario" cols="40" rows="10" placeholder="Agregue un comentario"></textarea><br><br>
+
+     <!-- Deseo recibir informacion a mi Email checkbox -->
+     <label for="checkbox">Deseo recibir informacion a mi Email</label>
+     <input type="checkbox" name="Deseo recibir informacion a mi Email" id="Deseo recibir informacion a mi Email"value="Deseo recibir informacion a mi Email"><br><br>
+
+     <!-- Enviar SUBMIT -->
+     <input type="submit"value="Enviar">
+
+    </form>
+</body>
+</html>
